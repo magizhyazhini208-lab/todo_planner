@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proper Website</title>
+    <script defer src="feedback.js"></script>
+    <script defer src="bmicalc.js"></script>
+    <script defer src="todo.js"></script>
+    <script defer src="formVisible.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav">
+        <h1><font color="black">All In One Apps Store</font></h1>
+        <!--<button name="1" class="buttonNav" id="1" onclick="check(this.id)">feed back</button>
+        <button name="2" class="buttonNav" id="2" onclick="check(this.id)">BMI Calculator</button>
+        <button name="3" class="buttonNav" id="3" onclick="check(this.id)">Todo List</button>-->
+    </div>
+    <div id="11">
+        <div class="menu">
+        <h1>Feed Back Form</h1>
+        <form name="feedback">
+            <label>Name</label>
+            <input type="text" name="userName" placeholder="Enter Your Name" id="userName">
+            <label>Email Id</label>
+            <input type="email" name="emailID" placeholder="abc@gmail.com" id="email">
+            <label>Message</label>
+            <input type="text" name="message" placeholder="Your Message" d="msg">
+            <button name="sendFeedback" type="submit" onClick="feedBack()" class="button">sendFeedback</button>
+        </form>
+        </div>
+    </div>
+    <div id="22">
+        <div class="content">
+        <h1>BMI Calcuator</h1>
+            <label>Age</label>
+            <input type="text" id="age" placeholder="Enter Your age">
+            <label>Gender</label>
+            <br>
+            <input type="radio" id="gender" name="gender" value="male">Male
+            <input type="radio" id="gender" name="gender" value="female">Female
+            <br>
+            <label>Height In Centi Meter</label>
+            <input type="text" id="height" placeholder="Enter Your Height">
+            <label>Weight</label>
+            <input type="text" id="weight" placeholder="Enter Your Weight">
+            <label id="active">You are Under Weight</label>
+            <div id="main"></div>
+            <div><br>
+                <button name="calculate" class="button"onclick="bmiCal()">calculate</button>
+            </div>
+            </div>
+    </div>
+    <div id="33">
+        <div class="slidebar">
+        <h1>TO DO List</h1>
+        <div>
+            <input type="text" id="fav" placeholder="Enter Your Do List">
+            <button name="save" onclick="toDO()" class="todo">Save</button>
+            <ul id="myList">
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>For Contact</h1>
+        <ul class="myList">
+        <i   class="fa-solid fa-envelope"></i>
+        <i   class="fa-solid fa-phone"></i>
+        <i   class="fa-brands fa-linkedin"></i>
+        <i   class="fa-brands fa-github"></i>
+        <i   class="fa-solid fa-address-book"></i>
+        </ul>
+    </div>
+    </div>
+         
+</body>
+</html>
